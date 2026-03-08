@@ -1,4 +1,4 @@
-import GradientText from "@/components/GradientText"
+import GradientTypeText from "@/components/GradientTypeText"
 import CornerBrackets from "@/components/CornerBrackets"
 import { Github, Linkedin, Mail, FileDown } from "lucide-react"
 import { useState, useEffect } from "react"
@@ -47,13 +47,12 @@ export default function Sidebar() {
       <CornerBrackets size={12} className="mb-6 p-4">
         <div className="py-2">
           <button onClick={scrollToTop} className="cursor-pointer text-left block">
-            <GradientText
+            <GradientTypeText
+              text={"Dimas\nDeffieux"}
               colors={["#a5b4fc", "#d8b4fe", "#a5b4fc"]}
               animationSpeed={6}
               className="cursor-pointer text-4xl font-bold leading-tight !mx-0"
-            >
-              Dimas Deffieux
-            </GradientText>
+            />
           </button>
           <p className="mt-3 text-sm text-slate-500 leading-relaxed">
             I build projects that merge technology with human language
@@ -105,13 +104,12 @@ export function MobileHeader() {
   return (
     <div className="md:hidden mb-12 pb-8 border-b border-[#13284a]">
       <button onClick={scrollToTop} className="cursor-pointer text-left block mb-3">
-        <GradientText
+        <GradientTypeText
+          text={"Dimas\nDeffieux"}
           colors={["#a5b4fc", "#d8b4fe", "#a5b4fc"]}
           animationSpeed={6}
           className="text-4xl font-bold leading-tight !mx-0"
-        >
-          Dimas Deffieux
-        </GradientText>
+        />
       </button>
       <p className="text-sm text-slate-500 leading-relaxed mb-6">
         I build projects that merge technology with human language

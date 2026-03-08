@@ -30,7 +30,7 @@ export default function Education() {
             >
               <div className={`relative flex items-start gap-8 md:gap-0 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
                 {/* Dot */}
-                <div className="absolute left-4 top-2 -translate-x-1/2 w-3 h-3 rounded-full bg-indigo-400 ring-4 ring-[#060d1f] md:left-1/2 z-10" />
+                <div className="absolute left-[10px] top-2 w-3 h-3 rounded-full bg-indigo-400 ring-4 ring-[#060d1f] md:left-[calc(50%-6px)]" />
 
                 {/* Card */}
                 <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"}`}>

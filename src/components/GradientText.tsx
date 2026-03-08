@@ -96,8 +96,8 @@ export default function GradientText({
   };
 
   return (
-    <motion.div
-      className={`relative mx-auto flex max-w-fit flex-row items-center justify-center backdrop-blur transition-shadow duration-500 cursor-default ${showBorder ? 'rounded-[1.25rem] overflow-hidden py-1 px-2' : ''} ${className}`}
+    <div
+      className={`relative mx-auto flex max-w-fit flex-row items-center justify-center transition-shadow duration-500 cursor-default ${showBorder ? 'rounded-[1.25rem] overflow-hidden py-1 px-2' : ''} ${className}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -119,11 +119,11 @@ export default function GradientText({
         </motion.div>
       )}
       <motion.div
-        className="inline-block relative z-2 text-transparent bg-clip-text"
+        className="inline-block relative text-transparent bg-clip-text"
         style={{ ...gradientStyle, backgroundPosition, WebkitBackgroundClip: 'text' }}
       >
         {children}
       </motion.div>
-    </motion.div>
+    </div>
   );
 }

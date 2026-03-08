@@ -30,7 +30,7 @@ export default function WorkExperience() {
             >
               <div className="relative flex items-start gap-8">
                 {/* Dot */}
-                <div className="absolute left-4 top-2 -translate-x-1/2 w-3 h-3 rounded-full bg-indigo-400 ring-4 ring-[#060d1f] z-10" />
+                <div className="absolute left-[10px] top-2 w-3 h-3 rounded-full bg-indigo-400 ring-4 ring-[#060d1f]" />
 
                 {/* Card */}
                 <div className="ml-12 flex-1">
