@@ -19,10 +19,10 @@ export default function CornerBrackets({
   return (
     <div className={`relative ${className}`}>
       {children}
-      <span className="absolute pointer-events-none z-10" style={{ ...dim, top: 0, left: 0, borderTop: border, borderLeft: border }} />
-      <span className="absolute pointer-events-none z-10" style={{ ...dim, top: 0, right: 0, borderTop: border, borderRight: border }} />
-      <span className="absolute pointer-events-none z-10" style={{ ...dim, bottom: 0, left: 0, borderBottom: border, borderLeft: border }} />
-      <span className="absolute pointer-events-none z-10" style={{ ...dim, bottom: 0, right: 0, borderBottom: border, borderRight: border }} />
+      <span className="absolute pointer-events-none " style={{ ...dim, top: 0, left: 0, borderTop: border, borderLeft: border }} />
+      <span className="absolute pointer-events-none " style={{ ...dim, top: 0, right: 0, borderTop: border, borderRight: border }} />
+      <span className="absolute pointer-events-none " style={{ ...dim, bottom: 0, left: 0, borderBottom: border, borderLeft: border }} />
+      <span className="absolute pointer-events-none " style={{ ...dim, bottom: 0, right: 0, borderBottom: border, borderRight: border }} />
     </div>
   )
 }
