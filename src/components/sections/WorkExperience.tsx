@@ -1,6 +1,7 @@
 import BlurText from "@/components/BlurText"
 import FadeContent from "@/components/FadeContent"
 import GradientText from "@/components/GradientText"
+import CornerBrackets from "@/components/CornerBrackets"
 import { workExperience } from "@/data/experience"
 
 export default function WorkExperience() {
@@ -33,7 +34,8 @@ export default function WorkExperience() {
 
                 {/* Card */}
                 <div className="ml-12 flex-1">
-                  <div className="rounded-2xl border border-[#13284a] bg-[#091930] p-6 shadow-sm">
+                  <CornerBrackets size={10} className="group">
+                  <div className="border border-transparent bg-transparent group-hover:border-[#13284a] group-hover:bg-[#091930] p-6 transition-colors duration-200">
                     <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
                       <div>
                         <GradientText
@@ -65,6 +67,7 @@ export default function WorkExperience() {
                       ))}
                     </div>
                   </div>
+                  </CornerBrackets>
                 </div>
               </div>
             </FadeContent>

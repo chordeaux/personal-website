@@ -2,6 +2,7 @@ import BlurText from "@/components/BlurText"
 import SpotlightCard from "@/components/SpotlightCard"
 import GradientText from "@/components/GradientText"
 import FadeContent from "@/components/FadeContent"
+import CornerBrackets from "@/components/CornerBrackets"
 import { ongoingWork } from "@/data/experience"
 
 export default function OngoingWork() {
@@ -24,8 +25,9 @@ export default function OngoingWork() {
             delay={index * 150}
             threshold={0.1}
           >
+            <CornerBrackets size={10} color="rgba(165,180,252,0.2)" className="h-full group">
             <SpotlightCard
-              className="h-full !rounded-2xl !border-[#13284a] !bg-[#091930] !p-6 shadow-sm"
+              className="h-full !rounded-none !border-transparent !bg-transparent group-hover:!border-[#13284a] group-hover:!bg-[#091930] !p-6 !shadow-none transition-colors duration-200"
               spotlightColor="rgba(165, 180, 252, 0.08)"
             >
               <div className="flex items-start justify-between mb-3">
@@ -56,6 +58,7 @@ export default function OngoingWork() {
                 ))}
               </div>
             </SpotlightCard>
+            </CornerBrackets>
           </FadeContent>
         ))}
       </div>

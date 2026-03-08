@@ -1,6 +1,7 @@
 import BlurText from "@/components/BlurText"
 import FadeContent from "@/components/FadeContent"
 import GradientText from "@/components/GradientText"
+import CornerBrackets from "@/components/CornerBrackets"
 import { education } from "@/data/experience"
 
 export default function Education() {
@@ -33,7 +34,8 @@ export default function Education() {
 
                 {/* Card */}
                 <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"}`}>
-                  <div className="rounded-2xl border border-[#13284a] bg-[#091930] p-6 shadow-sm">
+                  <CornerBrackets size={10} className="group">
+                  <div className="border border-transparent bg-transparent group-hover:border-[#13284a] group-hover:bg-[#091930] p-6 transition-colors duration-200">
                     <span className="text-xs font-medium text-indigo-300 bg-indigo-950/60 rounded-full px-2.5 py-0.5">
                       {item.period}
                     </span>
@@ -52,6 +54,7 @@ export default function Education() {
                       <p className="text-sm text-slate-400 leading-relaxed">{item.description}</p>
                     )}
                   </div>
+                  </CornerBrackets>
                 </div>
 
                 {/* Spacer for the other side */}

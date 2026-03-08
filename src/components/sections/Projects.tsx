@@ -2,6 +2,7 @@ import BlurText from "@/components/BlurText"
 import SpotlightCard from "@/components/SpotlightCard"
 import GradientText from "@/components/GradientText"
 import FadeContent from "@/components/FadeContent"
+import CornerBrackets from "@/components/CornerBrackets"
 import { projects } from "@/data/projects"
 import { ExternalLink, Github } from "lucide-react"
 
@@ -25,8 +26,9 @@ export default function Projects() {
             delay={index * 150}
             threshold={0.1}
           >
+            <CornerBrackets size={10} color="rgba(165,180,252,0.2)" className="h-full group">
             <SpotlightCard
-              className="h-full !rounded-2xl !border-[#13284a] !bg-[#091930] !p-6 shadow-sm"
+              className="h-full !rounded-none !border-transparent !bg-transparent group-hover:!border-[#13284a] group-hover:!bg-[#091930] !p-6 !shadow-none transition-colors duration-200"
               spotlightColor="rgba(165, 180, 252, 0.08)"
             >
               <GradientText
@@ -77,6 +79,7 @@ export default function Projects() {
                 )}
               </div>
             </SpotlightCard>
+            </CornerBrackets>
           </FadeContent>
         ))}
       </div>

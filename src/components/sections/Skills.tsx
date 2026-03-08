@@ -4,6 +4,7 @@ import { useState } from "react"
 import BlurText from "@/components/BlurText"
 import CountUp from "@/components/CountUp"
 import FadeContent from "@/components/FadeContent"
+import CornerBrackets from "@/components/CornerBrackets"
 import { stats, technologies, type TechCategory } from "@/data/skills"
 
 const filters: { label: string; value: TechCategory | "all" }[] = [
@@ -40,6 +41,7 @@ export default function Skills() {
             delay={index * 150}
             threshold={0.2}
           >
+            <CornerBrackets size={10} className="p-4">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-indigo-300 mb-2">
                 <CountUp
@@ -52,6 +54,7 @@ export default function Skills() {
               </div>
               <p className="text-slate-400 text-sm">{stat.label}</p>
             </div>
+            </CornerBrackets>
           </FadeContent>
         ))}
       </div>
@@ -83,11 +86,13 @@ export default function Skills() {
             delay={index * 50}
             threshold={0.1}
           >
-            <div className="flex items-center justify-center gap-3 rounded-xl border border-[#13284a] bg-[#091930] p-4 shadow-sm transition-colors hover:border-indigo-400/40">
-              <span className="text-slate-300 text-sm font-medium">
-                {tech.name}
-              </span>
-            </div>
+            <CornerBrackets size={8} color="rgba(165,180,252,0.2)">
+              <div className="flex items-center justify-center gap-3 border border-[#13284a] bg-[#091930] p-4">
+                <span className="text-slate-300 text-sm font-medium">
+                  {tech.name}
+                </span>
+              </div>
+            </CornerBrackets>
           </FadeContent>
         ))}
       </div>
