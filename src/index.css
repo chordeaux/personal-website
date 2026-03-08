@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: "Satoshi", system-ui, -apple-system, sans-serif;
   --color-background: #fafafa;
   --color-foreground: #0a0a0a;
   --color-muted: #71717a;
@@ -16,6 +16,7 @@
 html {
   scroll-behavior: smooth;
   background-color: #060d1f;
+  overscroll-behavior: none;
 }
 
 body {

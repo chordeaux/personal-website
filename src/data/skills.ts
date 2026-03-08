@@ -26,7 +26,7 @@ export const technologies: { name: string; category: TechCategory }[] = [
   { name: "Ollama", category: "ml" },
   { name: "ChromaDB", category: "ml" },
   { name: "RAG", category: "ml" },
-  { name: "pandas", category: "ml" },
+  { name: "Pandas", category: "ml" },
   { name: "NumPy", category: "ml" },
   { name: "matplotlib", category: "ml" },
   // Web & Backend
