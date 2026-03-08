@@ -13,7 +13,7 @@ function App() {
     <div className="flex min-h-screen bg-[#060d1f] text-slate-100">
       <CursorGlow />
       <Sidebar />
-      <main className="ml-72 flex-1 px-12 py-12">
+      <main className="ml-0 md:ml-72 flex-1 px-6 md:px-12 py-12">
         <About />
         <OngoingWork />
         <Projects />

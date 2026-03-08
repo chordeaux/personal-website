@@ -1,0 +1,6 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="20" fill="#060d1f"/>
+  <text x="38" y="82" text-anchor="middle" font-family="monospace" font-weight="700" font-size="58" fill="#fff">D</text>
+  <line x1="64" y1="28" x2="64" y2="100" stroke="#444" stroke-width="2"/>
+  <text x="90" y="82" text-anchor="middle" font-family="monospace" font-weight="700" font-size="58" fill="#fff">D</text>
+</svg>
