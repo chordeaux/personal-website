@@ -74,4 +74,12 @@ export const workExperience: WorkItem[] = [
       "Active member of the CentraleSupélec AI club. Developing and maintaining the club website and participating in AI workshops and project collaborations.",
     tags: ["Next.js", "Tailwind CSS", "TypeScript", "Jupyter", "PyTorch", "pandas"],
   },
+  {
+    company: "Bureau des Bachelors",
+    role: "VP of IT",
+    period: "2026 – Present",
+    description:
+      "Selected Vice President of IT. Overseeing the web presence and infrastructure of the association, as well as integrating with current school systems. Currently handling the overhaul of the website infrastructure.",
+    tags: ["Next.js", "PostgreSQL", "TypeScript", "PHP"],
+  },
 ]
