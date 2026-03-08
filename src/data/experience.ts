@@ -72,7 +72,7 @@ export const workExperience: WorkItem[] = [
     period: "2025 – Present",
     description:
       "Active member of the CentraleSupélec AI club. Developing and maintaining the club website and participating in AI workshops and project collaborations.",
-    tags: ["Next.js", "Tailwind CSS", "TypeScript", "Jupyter", "PyTorch", "pandas"],
+    tags: ["Next.js", "Tailwind CSS", "TypeScript", "Jupyter", "PyTorch", "Pandas"],
   },
   {
     company: "Bureau des Bachelors",

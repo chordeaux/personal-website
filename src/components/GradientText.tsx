@@ -97,7 +97,7 @@ export default function GradientText({
 
   return (
     <div
-      className={`relative mx-auto flex max-w-fit flex-row items-center justify-center transition-shadow duration-500 cursor-default ${showBorder ? 'rounded-[1.25rem] overflow-hidden py-1 px-2' : ''} ${className}`}
+      className={`relative flex max-w-fit flex-row items-center justify-center transition-shadow duration-500 cursor-default ${showBorder ? 'rounded-[1.25rem] overflow-hidden py-1 px-2' : ''} ${className}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
