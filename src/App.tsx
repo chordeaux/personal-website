@@ -1,27 +1,27 @@
-import Hero from "@/components/sections/Hero"
+import Sidebar from "@/components/layout/Sidebar"
+import CursorGlow from "@/components/CursorGlow"
 import About from "@/components/sections/About"
+import OngoingWork from "@/components/sections/OngoingWork"
 import Projects from "@/components/sections/Projects"
+import WorkExperience from "@/components/sections/WorkExperience"
+import Education from "@/components/sections/Education"
 import Skills from "@/components/sections/Skills"
 import Contact from "@/components/sections/Contact"
-import Navigation from "@/components/layout/Navigation"
-import Blur from "@/components/sections/Blur"
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#fafafa] text-zinc-900">
-      <Navigation />
-      <main>
-        <Hero />
+    <div className="flex min-h-screen bg-[#060d1f] text-slate-100">
+      <CursorGlow />
+      <Sidebar />
+      <main className="ml-0 md:ml-72 flex-1 px-6 md:px-12 py-12">
         <About />
+        <OngoingWork />
         <Projects />
+        <WorkExperience />
+        <Education />
         <Skills />
         <Contact />
-        <Blur />
-
       </main>
-      {/* Gradual blur overlays at top and bottom of viewport */}
-      <div className="pointer-events-none fixed inset-x-0 top-0 z-40 h-36 backdrop-blur-md [mask-image:linear-gradient(to_bottom,black,transparent)]" />
-      <div className="pointer-events-none fixed inset-x-0 bottom-0 z-40 h-40 backdrop-blur-md [mask-image:linear-gradient(to_top,black,transparent)]" />
     </div>
   )
 }

@@ -7,10 +7,10 @@ import { ExternalLink, Github } from "lucide-react"
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6 md:px-12 max-w-6xl mx-auto">
+    <section id="projects" className="py-24">
       <BlurText
         text="Featured Projects"
-        className="text-4xl md:text-5xl font-bold mb-16 justify-center"
+        className="text-4xl md:text-5xl font-bold mb-16 justify-start"
         delay={150}
         animateBy="words"
         direction="top"
@@ -26,18 +26,18 @@ export default function Projects() {
             threshold={0.1}
           >
             <SpotlightCard
-              className="h-full !rounded-2xl !border-zinc-200 !bg-white !p-6 shadow-sm"
-              spotlightColor="rgba(99, 102, 241, 0.15)"
+              className="h-full !rounded-2xl !border-[#13284a] !bg-[#091930] !p-6 shadow-sm"
+              spotlightColor="rgba(165, 180, 252, 0.08)"
             >
               <GradientText
-                colors={["#818cf8", "#c084fc", "#818cf8"]}
+                colors={["#a5b4fc", "#d8b4fe", "#a5b4fc"]}
                 animationSpeed={6}
                 className="text-xl font-semibold mb-3"
               >
                 {project.title}
               </GradientText>
 
-              <p className="text-zinc-500 text-sm mb-5 leading-relaxed">
+              <p className="text-slate-400 text-sm mb-5 leading-relaxed">
                 {project.description}
               </p>
 
@@ -45,7 +45,7 @@ export default function Projects() {
                 {project.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-600"
+                    className="rounded-full bg-[#0a1e38] px-3 py-1 text-xs text-slate-400"
                   >
                     {tag}
                   </span>
@@ -58,10 +58,10 @@ export default function Projects() {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-sm text-zinc-500 hover:text-indigo-600 transition-colors"
+                    className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-300 transition-colors"
                   >
                     <ExternalLink size={14} />
-                    Live Demo
+                    Link
                   </a>
                 )}
                 {project.github && (
@@ -69,7 +69,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-sm text-zinc-500 hover:text-indigo-600 transition-colors"
+                    className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-300 transition-colors"
                   >
                     <Github size={14} />
                     Source

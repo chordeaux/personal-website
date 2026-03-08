@@ -8,32 +8,35 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "ViaRezo Support Chatbot",
+    title: "ViaRezo WiFi Support Chatbot",
     description:
-      "A full-stack web application built with React and Node.js for real-time data visualization and analytics dashboards.",
-    tags: ["React", "Node.js", "TypeScript", "D3.js"],
-    url: "https://example.com",
-    github: "https://github.com/example/project-alpha",
+      "Generative AI chatbot built with FastAPI and Ollama to automate WiFi support for ViaRezo, a student-led ISP serving 2,000+ users. Uses a RAG pipeline with ChromaDB grounded in the association's technical wiki, a custom async job queue built on Redis and ARQ, and replaced a legacy email workflow where response times often exceeded 24 hours.",
+    tags: ["Ollama", "FastAPI", "Python", "RAG", "ChromaDB", "Redis", "ARQ"],
   },
   {
-    title: "FR-EN Translation Transformer",
+    title: "Bureau des Bachelors Web Overhaul",
     description:
-      "An AI-powered tool that streamlines workflow automation for development teams using natural language commands.",
-    tags: ["Python", "React", "OpenAI", "PostgreSQL"],
-    github: "https://github.com/example/project-beta",
+      "Full backend overhaul of the Bureau des Bachelors web infrastructure, migrating from a fragmented PHP setup to a modular Next.js backend to reduce separately hosted sites from 4 to 2. Includes a redesigned website with event signups, member subscription management, and admin functionalities, with improved documentation to enable smooth developer handoffs.",
+    tags: ["Next.js", "TypeScript", "PHP", "PostgreSQL"],
   },
   {
-    title: "Project Gamma",
+    title: "Transformer Translation LLM",
     description:
-      "A modern e-commerce platform with seamless payment integration, real-time inventory tracking, and admin dashboard.",
-    tags: ["Next.js", "Stripe", "Prisma", "Tailwind"],
-    url: "https://example.com",
+      "Engineered an LLM from scratch using Transformer architecture in PyTorch to translate languages, covering the full pipeline from data preprocessing with HuggingFace datasets and tokenizers to training and evaluation. Built as a deep dive into understanding model architecture.",
+    tags: ["Python", "PyTorch", "HuggingFace", "NLP", "Transformers"],
   },
   {
-    title: "Project Delta",
+    title: "MNIST Digit Recognition",
     description:
-      "A collaborative design tool that enables real-time editing and version control for creative teams.",
-    tags: ["React", "WebSocket", "Canvas API", "Redis"],
-    github: "https://github.com/example/project-delta",
+      "Engineered and trained neural networks and CNNs in TensorFlow/Keras to classify handwritten MNIST digits, achieving 97% accuracy. Applied dropout, batch normalization, and hyperparameter tuning, and refined the CNN to 35,000 parameters (down from 38M) while maintaining accuracy.",
+    tags: ["Python", "TensorFlow", "Keras", "scikit-learn", "CNNs"],
+    github: "https://github.com/chordeaux/vhs-intro-ai/tree/main/handwriting_recognition",
+  },
+  {
+    title: "Automatants Website",
+    description:
+      "Maintaining and improving the website for Automatants, the AI student club at CentraleSupélec. Covers club projects, events, and learning resources for students interested in AI.",
+    tags: ["Next.js", "Tailwind CSS"],
+    url: "https://automatants.cs-campus.fr/",
   },
 ]
