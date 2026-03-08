@@ -1,6 +1,6 @@
 # dependencies
-/node_modules
-/.pnp
+node_modules/
+.pnp
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -8,33 +8,33 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
+# build output (Vite)
+dist/
+dist-ssr/
 
-# next.js
-/.next/
-/out/
+# local env files
+.env
+.env.*
+!.env.example
 
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+pnpm-debug.log*
+*.log
 
-# env files (can opt-in for committing if needed)
-.env*
+# editor / OS
+.DS_Store
+Thumbs.db
+*.pem
 
-# vercel
-.vercel
-
-# typescript
+# TypeScript
 *.tsbuildinfo
-next-env.d.ts
-nul
+
+# Vite
+.vite/
+*.local
+
+# Claude Code local settings
+.claude/
