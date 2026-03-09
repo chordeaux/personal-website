@@ -8,6 +8,7 @@ import WorkExperience from "@/components/sections/WorkExperience"
 import Education from "@/components/sections/Education"
 import Skills from "@/components/sections/Skills"
 import Contact from "@/components/sections/Contact"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Skills />
         <Contact />
       </main>
+      <Analytics />
     </div>
   )
 }
