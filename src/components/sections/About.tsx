@@ -25,7 +25,7 @@ export default function About() {
               end-to-end model pipelines for <b>MNIST</b> classification and another for transformer translation.
             </p>
             <p>
-              If I'm not building or studying, I'm grinding in in the gym, obsessing over stationary, or learning languages to connect
+              If I'm not building or studying, I'm grinding in the gym, obsessing over stationary, or learning languages to connect
               with global communities.
             </p>
           </div>
