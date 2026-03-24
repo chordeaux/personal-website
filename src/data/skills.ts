@@ -5,7 +5,7 @@ export const stats = [
   { value: 25, suffix: "+", label: "Technologies" },
 ]
 
-export type TechCategory = "languages" | "ml" | "web" | "tools"
+export type TechCategory = "languages" | "ml" | "web" | "tools" | "spoken languages"
 
 export const technologies: { name: string; category: TechCategory }[] = [
   // Languages
@@ -42,4 +42,10 @@ export const technologies: { name: string; category: TechCategory }[] = [
   { name: "Git", category: "tools" },
   { name: "Linux", category: "tools" },
   { name: "Jupyter Notebooks", category: "tools" },
+  //Spoken Languages
+  {name: "English", category: "spoken languages"},
+  {name: "French", category: "spoken languages"},
+  {name: "Korean", category: "spoken languages"},
+  {name: "Japanese", category: "spoken languages"},
+  
 ]

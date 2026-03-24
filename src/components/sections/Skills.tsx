@@ -9,10 +9,12 @@ import { stats, technologies, type TechCategory } from "@/data/skills"
 
 const filters: { label: string; value: TechCategory | "all" }[] = [
   { label: "All", value: "all" },
-  { label: "Languages", value: "languages" },
+  { label: "Programming Languages", value: "languages" },
   { label: "ML / AI", value: "ml" },
   { label: "Web & Backend", value: "web" },
   { label: "Tools", value: "tools" },
+  { label: "Spoken Languages", value: "spoken languages" },
+
 ]
 
 export default function Skills() {
@@ -76,7 +78,7 @@ export default function Skills() {
         ))}
       </div>
 
-      {/* Technologies */}
+      {/* Skill */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {filtered.map((tech, index) => (
           <FadeContent
