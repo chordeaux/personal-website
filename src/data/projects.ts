@@ -18,6 +18,7 @@ export const projects: Project[] = [
     description:
       "Full backend overhaul of the Bureau des Bachelors web infrastructure, migrating from a fragmented PHP setup to a modular Next.js backend to reduce separately hosted sites from 4 to 2. Includes a redesigned website with event signups, member subscription management, and admin functionalities, with improved documentation to enable smooth developer handoffs.",
     tags: ["Next.js", "TypeScript", "PHP", "PostgreSQL"],
+    url: "https://www.bdbcs.fr/"
   },
   {
     title: "Transformer Translation LLM",
