@@ -21,8 +21,9 @@ export default function About() {
               Open to connecting about <b>NLP</b>, developer tools, or scalable systems with real-world impact.
             </p>
             <p>
-              My previous work includes building a community web forum with <b>Jakarta Servlets</b>, and designing 
-              end-to-end model pipelines for <b>MNIST</b> classification and another for transformer translation.
+              My recent work includes building an AI support chatbot with a <b>RAG pipeline</b> for <b>ViaRezo</b>,
+              training a <b>transformer</b> translation model end-to-end, and leading the full-stack overhaul
+              of the <b>Bureau des Bachelors</b> web infrastructure.
             </p>
             <p>
               If I'm not building or studying, I'm grinding in the gym, obsessing over stationary, or learning languages to connect

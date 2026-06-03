@@ -24,11 +24,11 @@ export default function Contact() {
         </p>
         <div className="flex items-center justify-center gap-4 flex-wrap">
           <a
-            href="mailto:dadeffieux@gmail.com"
+            href="mailto:dimas@deffi.eu"
             className="flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-500/20 border border-indigo-400/40 text-indigo-300 text-sm font-medium hover:bg-indigo-500/30 hover:border-indigo-400/70 transition-colors"
           >
             <Mail size={16} />
-            dadeffieux@gmail.com
+            dimas@deffi.eu
           </a>
           <a
             href="https://linkedin.com/in/dimas-deffieux"

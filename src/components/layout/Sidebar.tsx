@@ -71,9 +71,9 @@ export default function Sidebar() {
           className="flex items-center gap-2.5 text-sm text-slate-500 hover:text-indigo-300 transition-colors">
           <Linkedin size={15} />linkedin.com/in/dimas-deffieux
         </a>
-        <a href="mailto:dadeffieux@gmail.com"
+        <a href="mailto:dimas@deffi.eu"
           className="flex items-center gap-2.5 text-sm text-slate-500 hover:text-indigo-300 transition-colors">
-          <Mail size={15} />dadeffieux@gmail.com
+          <Mail size={15} />dimas@deffi.eu
         </a>
       </div>
 
@@ -124,7 +124,7 @@ export function MobileHeader() {
           className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-300 transition-colors">
           <Linkedin size={14} />LinkedIn
         </a>
-        <a href="mailto:dadeffieux@gmail.com"
+        <a href="mailto:dimas@deffi.eu"
           className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-300 transition-colors">
           <Mail size={14} />Email
         </a>

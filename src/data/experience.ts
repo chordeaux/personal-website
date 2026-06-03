@@ -32,7 +32,7 @@ export const ongoingWork: OngoingItem[] = [
   {
     title: "Bureau des Bachelors Web Overhaul",
     description:
-      "Full backend overhaul of the Bureau des Bachelors web infrastructure, migrating from a fragmented PHP setup to a modular Next.js backend to reduce separately hosted sites from 4 to 2. Includes a redesigned website with event signups, member subscription management, and admin functionalities, with improved documentation to enable smooth developer handoffs.",
+      "Full-stack overhaul of the Bureau des Bachelors web infrastructure, migrating from a fragmented PHP setup to a modular Next.js backend to reduce separately hosted sites from 4 to 2. Includes a redesigned website with event signups, member subscription management, and admin functionalities, with improved documentation to enable smooth developer handoffs.",
     tags: ["Next.js", "TypeScript", "PHP", "PostgreSQL"],
     status: "Active",
   },
@@ -59,6 +59,14 @@ export const education: EducationItem[] = [
 
 export const workExperience: WorkItem[] = [
   {
+    company: "SLB",
+    role: "Software Engineering Intern",
+    period: "June 2026 – July 2026",
+    description:
+      "Building an internal SharePoint chatbot using RAG for the Electrical Métier division.",
+    tags: ["RAG", "SharePoint", "Python"],
+  },
+  {
     company: "ViaRezo",
     role: "Technical Member",
     period: "2025 – Present",
@@ -82,4 +90,5 @@ export const workExperience: WorkItem[] = [
       "Selected Vice President of IT. Overseeing the web presence and infrastructure of the association, as well as integrating with current school systems. Currently handling the overhaul of the website infrastructure.",
     tags: ["Next.js", "PostgreSQL", "TypeScript", "PHP"],
   },
+
 ]
