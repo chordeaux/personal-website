@@ -8,12 +8,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "ViaRezo WiFi Support Chatbot",
-    description:
-      "Generative AI chatbot built with FastAPI and Ollama to automate WiFi support for ViaRezo, a student-led ISP serving 2,000+ users. Uses a RAG pipeline with ChromaDB grounded in the association's technical wiki, a custom async job queue built on Redis and ARQ, and replaced a legacy email workflow where response times often exceeded 24 hours.",
-    tags: ["Ollama", "FastAPI", "Python", "RAG", "ChromaDB", "Redis", "ARQ"],
-  },
-  {
     title: "Bureau des Bachelors Web Overhaul",
     description:
       "Full backend overhaul of the Bureau des Bachelors web infrastructure, migrating from a fragmented PHP setup to a modular Next.js backend to reduce separately hosted sites from 4 to 2. Includes a redesigned website with event signups, member subscription management, and admin functionalities, with improved documentation to enable smooth developer handoffs.",
