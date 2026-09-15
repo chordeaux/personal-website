@@ -21,7 +21,7 @@ export default function CursorGlow() {
         width: "400px",
         height: "400px",
         background:
-          "radial-gradient(circle, rgba(99,102,241,0.12) 0%, rgba(99,102,241,0.04) 40%, transparent 70%)",
+          "radial-gradient(circle, rgba(179,35,42,0.07) 0%, rgba(179,35,42,0.02) 40%, transparent 70%)",
         borderRadius: "50%",
         transition: "left 0.06s ease-out, top 0.06s ease-out",
       }}

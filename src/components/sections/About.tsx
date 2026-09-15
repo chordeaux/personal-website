@@ -5,11 +5,11 @@ export default function About() {
     <section id="about" className="pt-12 pb-16">
       <FadeContent blur={true} duration={1000} threshold={0.1}>
         <div>
-          <p className="text-2xl font-semibold text-slate-100 leading-snug mb-6">
+          <p className="text-2xl font-semibold text-ink leading-snug mb-6">
             Multicultural first-year engineering student in a dual-degree program at <b>CentraleSupélec and McGill
             University</b>, focused on software engineering, machine learning, and NLP.
           </p>
-          <div className="space-y-4 text-base text-slate-400 leading-relaxed">
+          <div className="space-y-4 text-base text-ash-700 leading-relaxed">
             <p>
               I work on full-stack development and AI applications. Currently building a WiFi support
               chatbot serving <b>2000+</b> users at <b>ViaRezo</b> and NLP-driven tools for language learning, and 

@@ -1,6 +1,5 @@
 import BlurText from "@/components/BlurText"
 import SpotlightCard from "@/components/SpotlightCard"
-import GradientText from "@/components/GradientText"
 import FadeContent from "@/components/FadeContent"
 import CornerBrackets from "@/components/CornerBrackets"
 import { projects } from "@/data/projects"
@@ -26,20 +25,16 @@ export default function Projects() {
             delay={index * 150}
             threshold={0.1}
           >
-            <CornerBrackets size={10} color="rgba(165,180,252,0.2)" className="h-full group">
+            <CornerBrackets size={10} color="rgba(179,35,42,0.28)" className="h-full group">
             <SpotlightCard
-              className="h-full !rounded-none !border-transparent !bg-transparent group-hover:!border-[#13284a] group-hover:!bg-[#091930] !p-6 !shadow-none transition-colors duration-200"
-              spotlightColor="rgba(165, 180, 252, 0.08)"
+              className="h-full !rounded-none !border-transparent !bg-transparent group-hover:!border-bone-300 group-hover:!bg-bone-50 !p-6 !shadow-none transition-colors duration-200"
+              spotlightColor="rgba(179, 35, 42, 0.06)"
             >
-              <GradientText
-                colors={["#a5b4fc", "#d8b4fe", "#a5b4fc"]}
-                animationSpeed={6}
-                className="text-xl font-semibold mb-3"
-              >
+              <h3 className="text-xl font-semibold mb-3 text-ink group-hover:text-rouge-700 transition-colors">
                 {project.title}
-              </GradientText>
+              </h3>
 
-              <p className="text-slate-400 text-sm mb-5 leading-relaxed">
+              <p className="text-ash-700 text-sm mb-5 leading-relaxed">
                 {project.description}
               </p>
 
@@ -47,7 +42,7 @@ export default function Projects() {
                 {project.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="rounded-full bg-[#0a1e38] px-3 py-1 text-xs text-slate-400"
+                    className="rounded-full bg-bone-200 px-3 py-1 text-xs text-ash-700"
                   >
                     {tag}
                   </span>
@@ -60,7 +55,7 @@ export default function Projects() {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-300 transition-colors"
+                    className="flex items-center gap-1.5 text-sm text-ash-500 hover:text-rouge-700 transition-colors"
                   >
                     <ExternalLink size={14} />
                     Link
@@ -71,7 +66,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-indigo-300 transition-colors"
+                    className="flex items-center gap-1.5 text-sm text-ash-500 hover:text-rouge-700 transition-colors"
                   >
                     <Github size={14} />
                     Source

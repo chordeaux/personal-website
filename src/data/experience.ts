@@ -51,6 +51,14 @@ export const education: EducationItem[] = [
 ]
 
 export const workExperience: WorkItem[] = [
+    {
+    company: "CStudio",
+    role: "Developer",
+    period: "2026 – Present",
+    description:
+      "Starting to work as part of the CStudio club at my school, which develops games in Unity",
+    tags: ["C#"],
+  },
   {
     company: "SLB",
     role: "Software Engineering Intern",
@@ -75,5 +83,6 @@ export const workExperience: WorkItem[] = [
       "Selected Vice President of IT. Overseeing the web presence and infrastructure of the association, as well as integrating with current school systems. Currently handling the overhaul of the website infrastructure.",
     tags: ["Next.js", "PostgreSQL", "TypeScript", "PHP"],
   },
+
 
 ]

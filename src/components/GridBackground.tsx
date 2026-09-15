@@ -36,21 +36,21 @@ export default function GridBackground() {
       <div
         className="absolute -top-48 right-1/4 w-[500px] h-[500px] rounded-full"
         style={{
-          background: "radial-gradient(circle, rgba(165,180,252,0.08), transparent 70%)",
+          background: "radial-gradient(circle, rgba(255,255,255,0.75), transparent 70%)",
           filter: "blur(80px)",
         }}
       />
       <div
         className="absolute -bottom-48 left-1/4 w-96 h-96 rounded-full"
         style={{
-          background: "radial-gradient(circle, rgba(216,180,254,0.06), transparent 70%)",
+          background: "radial-gradient(circle, rgba(179,35,42,0.06), transparent 70%)",
           filter: "blur(80px)",
         }}
       />
       <div
         className="absolute top-1/3 -left-24 w-72 h-72 rounded-full"
         style={{
-          background: "radial-gradient(circle, rgba(99,102,241,0.08), transparent 70%)",
+          background: "radial-gradient(circle, rgba(138,134,124,0.16), transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -60,8 +60,8 @@ export default function GridBackground() {
         className="absolute inset-0"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(165,180,252,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(165,180,252,0.03) 1px, transparent 1px)
+            linear-gradient(rgba(25,24,21,0.045) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(25,24,21,0.045) 1px, transparent 1px)
           `,
           backgroundSize: "40px 40px",
         }}
@@ -73,8 +73,8 @@ export default function GridBackground() {
         className="absolute inset-0"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(165,180,252,0.22) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(165,180,252,0.22) 1px, transparent 1px)
+            linear-gradient(rgba(179,35,42,0.20) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(179,35,42,0.20) 1px, transparent 1px)
           `,
           backgroundSize: "40px 40px",
           maskImage: "radial-gradient(circle 280px at -1000px -1000px, black, transparent)",

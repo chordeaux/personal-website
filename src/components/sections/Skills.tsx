@@ -45,7 +45,7 @@ export default function Skills() {
           >
             <CornerBrackets size={10} className="p-4">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-indigo-300 mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-rouge-500 mb-2">
                 <CountUp
                   from={0}
                   to={stat.value}
@@ -54,7 +54,7 @@ export default function Skills() {
                 />
                 <span>{stat.suffix}</span>
               </div>
-              <p className="text-slate-400 text-sm">{stat.label}</p>
+              <p className="text-ash-700 text-sm">{stat.label}</p>
             </div>
             </CornerBrackets>
           </FadeContent>
@@ -67,10 +67,10 @@ export default function Skills() {
           <button
             key={f.value}
             onClick={() => setActive(f.value)}
-            className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-colors ${
+            className={`relative px-4 py-1.5 rounded-full text-sm font-medium border transition-colors ${
               active === f.value
-                ? "bg-indigo-500/20 border-indigo-400/60 text-indigo-300"
-                : "border-[#13284a] text-slate-400 hover:border-indigo-400/30 hover:text-slate-300"
+                ? "bg-rouge-700 border-rouge-700 text-bone-50"
+                : "bg-bone-50 border-bone-300 text-ash-600 hover:border-rouge-700/40 hover:text-ink"
             }`}
           >
             {f.label}
@@ -88,9 +88,9 @@ export default function Skills() {
             delay={index * 50}
             threshold={0.1}
           >
-            <CornerBrackets size={8} color="rgba(165,180,252,0.2)">
-              <div className="flex items-center justify-center gap-3 border border-[#13284a] bg-[#091930] p-4">
-                <span className="text-slate-300 text-sm font-medium">
+            <CornerBrackets size={8} color="rgba(179,35,42,0.28)">
+              <div className="flex items-center justify-center gap-3 border border-bone-300 bg-bone-50 p-4">
+                <span className="text-ink-soft text-sm font-medium">
                   {tech.name}
                 </span>
               </div>

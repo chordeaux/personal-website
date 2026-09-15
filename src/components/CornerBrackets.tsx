@@ -11,7 +11,7 @@ export default function CornerBrackets({
   children,
   className = "",
   size = 14,
-  color = "rgba(165,180,252,0.3)",
+  color = "rgba(25,24,21,0.25)",
 }: CornerBracketsProps) {
   const border = `1px solid ${color}`
   const dim = { width: size, height: size }
