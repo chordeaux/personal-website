@@ -38,7 +38,7 @@ export const education: EducationItem[] = [
     period: "2025 – Present",
     location: "Paris, France & Montreal, Canada",
     description:
-      "First-year engineering student in a dual-degree program split between France and Canada. At CentraleSupélec, contributed to ViaRezo (student-run ISP, 2,000+ users) by building an AI support chatbot, rebuilt Automatants' web infrastructure as a member of the AI club, and served as VP Tech for the Bureau des Bachelors. Competed in a Coding Week building a ski GPS pathfinding app, completed a Modeling Week implementing an epidemiological simulation, and participated in the Bachelor Debate Club.",
+      "First-year engineering student in a dual-degree program split between France and Canada. At CentraleSupélec, rebuilt Automatants' web infrastructure as a member of the AI club, and served as VP Tech for the Bureau des Bachelors. Competed in a Coding Week building a ski GPS pathfinding app, completed a Modeling Week implementing an epidemiological simulation, and participated in the Bachelor Debate Club. Now participating in the Game Development club, creating games in collaboration with other associations on campus.",
   },
   {
     institution: "The Village School",
@@ -54,7 +54,7 @@ export const workExperience: WorkItem[] = [
     {
     company: "CStudio",
     role: "Developer",
-    period: "2026 – Present",
+    period: "September 2026 – Present",
     description:
       "Starting to work as part of the CStudio club at my school, which develops games in Unity",
     tags: ["C#"],

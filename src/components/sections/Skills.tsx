@@ -33,34 +33,6 @@ export default function Skills() {
         direction="top"
       />
 
-      {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-        {stats.map((stat, index) => (
-          <FadeContent
-            key={index}
-            blur={true}
-            duration={800}
-            delay={index * 150}
-            threshold={0.2}
-          >
-            <CornerBrackets size={10} className="p-4">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-rouge-500 mb-2">
-                <CountUp
-                  from={0}
-                  to={stat.value}
-                  duration={2.5}
-                  separator=","
-                />
-                <span>{stat.suffix}</span>
-              </div>
-              <p className="text-ash-700 text-sm">{stat.label}</p>
-            </div>
-            </CornerBrackets>
-          </FadeContent>
-        ))}
-      </div>
-
       {/* Filter tabs */}
       <div className="flex flex-wrap gap-2 mb-8">
         {filters.map((f) => (
