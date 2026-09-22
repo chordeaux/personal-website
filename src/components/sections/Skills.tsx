@@ -2,10 +2,9 @@
 
 import { useState } from "react"
 import BlurText from "@/components/BlurText"
-import CountUp from "@/components/CountUp"
 import FadeContent from "@/components/FadeContent"
 import CornerBrackets from "@/components/CornerBrackets"
-import { stats, technologies, type TechCategory } from "@/data/skills"
+import { technologies, type TechCategory } from "@/data/skills"
 
 const filters: { label: string; value: TechCategory | "all" }[] = [
   { label: "All", value: "all" },
