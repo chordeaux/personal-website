@@ -1,1 +1,1 @@
-my website. just has some projects and stuff.
+my website. just has some projects and stuff. just lowk vibe coded it with claude code, because i hate frontend design.
