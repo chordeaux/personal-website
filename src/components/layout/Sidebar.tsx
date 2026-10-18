@@ -1,6 +1,6 @@
 import TypeText from "@/components/TypeText"
 import CornerBrackets from "@/components/CornerBrackets"
-import { Github, Linkedin, Mail, FileDown } from "lucide-react"
+import { Github, Linkedin, Mail, FileText } from "lucide-react"
 import { useState, useEffect } from "react"
 
 const sections = [
@@ -75,9 +75,9 @@ export default function Sidebar() {
         </a>
       </div>
 
-      <a href="/resume.pdf" download
+      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
         className="flex items-center justify-center gap-2 mb-6 px-4 py-2 rounded-lg border border-rouge-700/35 text-sm font-medium text-rouge-700 hover:bg-rouge-700/10 hover:border-rouge-700/70 transition-colors">
-        <FileDown size={15} />Resume
+        <FileText size={15} />Resume
       </a>
 
       <nav className="flex flex-col gap-1">
@@ -126,9 +126,9 @@ export function MobileHeader() {
         </a>
       </div>
 
-      <a href="/resume.pdf" download
+      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
         className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-rouge-700/35 text-sm font-medium text-rouge-700 hover:bg-rouge-700/10 hover:border-rouge-700/70 transition-colors">
-        <FileDown size={14} />Resume
+        <FileText size={14} />Resume
       </a>
     </div>
   )

@@ -52,8 +52,12 @@ export default function Education() {
                   </CornerBrackets>
                 </div>
 
-                {/* Spacer for the other side */}
-                <div className="hidden md:block md:w-[calc(50%-2rem)]" />
+                {/* Logo on the other side of the timeline */}
+                <div className={`hidden md:block relative md:w-[calc(50%-2rem)] self-stretch ${index % 2 === 0 ? "md:ml-16" : "md:mr-16"}`}>
+                  {item.logo && (
+                    <img src={item.logo} alt={`${item.institution} logo`} className="absolute inset-0 w-full h-full object-contain p-4" />
+                  )}
+                </div>
               </div>
             </FadeContent>
           ))}

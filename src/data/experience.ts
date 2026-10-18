@@ -1,7 +1,6 @@
-export interface OngoingItem {
-  title: string
-  description: string
-  tags: string[]
+import { type Project, cppNeuralNetwork } from "@/data/projects"
+
+export interface OngoingItem extends Project {
   status: string
 }
 
@@ -11,6 +10,7 @@ export interface EducationItem {
   period: string
   location?: string
   description?: string
+  logo?: string
 }
 
 export interface WorkItem {
@@ -22,13 +22,7 @@ export interface WorkItem {
 }
 
 export const ongoingWork: OngoingItem[] = [
-  {
-    title: "Bureau des Bachelors Web Overhaul",
-    description:
-      "Full-stack overhaul of the Bureau des Bachelors web infrastructure, migrating from a fragmented PHP setup to a modular Next.js backend to reduce separately hosted sites from 4 to 2. Includes a redesigned website with event signups, member subscription management, and admin functionalities, with improved documentation to enable smooth developer handoffs.",
-    tags: ["Next.js", "TypeScript", "PHP", "PostgreSQL"],
-    status: "Active",
-  },
+  { ...cppNeuralNetwork, status: "Active" },
 ]
 
 export const education: EducationItem[] = [
@@ -37,6 +31,7 @@ export const education: EducationItem[] = [
     degree: "Bachelor of Global Engineering (BoGE) Dual-Degree",
     period: "2025 – Present",
     location: "Paris, France & Montreal, Canada",
+    logo: "/files/logos/centralesupelec-mcgill.svg",
     description:
       "First-year engineering student in a dual-degree program split between France and Canada. At CentraleSupélec, rebuilt Automatants' web infrastructure as a member of the AI club, and served as VP Tech for the Bureau des Bachelors. Competed in a Coding Week building a ski GPS pathfinding app, completed a Modeling Week implementing an epidemiological simulation, and participated in the Bachelor Debate Club. Now participating in the Game Development club, creating games in collaboration with other associations on campus.",
   },
@@ -45,6 +40,7 @@ export const education: EducationItem[] = [
     degree: "IB Diploma",
     period: "2021 – 2025",
     location: "Houston, Texas",
+    logo: "/files/logos/village-school.png",
     description:
       "Completed the IB Diploma with HL Computer Science, Physics, Mathematics (AA), and History. Took CS coursework every year, culminating in IB CS HL with an IA building a financial manager to analyze and visualize credit card statements, and an Extended Essay evaluating the performance of pathfinding algorithms. Founded the Coding Club, earned 2× Best Programmer (CS Honors Society) and the French Excellence Award, and made the Honor Roll in grades 11 and 12. Also competed in TAPPS Math and participated in Aeronautics Club.",
   }

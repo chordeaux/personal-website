@@ -6,28 +6,29 @@ export default function About() {
       <FadeContent blur={true} duration={1000} threshold={0.1}>
         <div>
           <p className="text-2xl font-semibold text-ink leading-snug mb-6">
-            Multicultural first-year engineering student in a dual-degree program at <b>CentraleSupélec and McGill
+            Multicultural second-year engineering student in a dual-degree program at <b>CentraleSupélec and McGill
             University</b>, focused on software engineering, machine learning, and NLP.
           </p>
           <div className="space-y-4 text-base text-ash-700 leading-relaxed">
             <p>
-              I work on full-stack development and AI applications. Currently building a WiFi support
-              chatbot serving <b>2000+</b> users at <b>ViaRezo</b> and NLP-driven tools for language learning, and 
-              building a location-based mobile marketplace for a niche community. My
-              technical work spans <b>Python</b>, <b>Java</b>, web frameworks, and machine learning systems.
+              I am interested in learning as much as I can and eventually starting a career in software development with significant
+              interested in graphics engineering and multilingual NLP. Up until now, my work has consisted of <b>machine learning systems</b>, 
+              <b> java</b> web and software development, and some small database work.
             </p>
             <p>
-              Interested in AI products that improve communication and accessibility across languages.
-              Open to connecting about <b>NLP</b>, developer tools, or scalable systems with real-world impact.
+              Interested in AI products that improve communication and accessibility across languages, and learning about graphics engineering.
+              Open to connecting about <b>NLP</b>, software development as a whole, and anything else which is interesting
             </p>
             <p>
-              My recent work includes building an AI support chatbot with a <b>RAG pipeline</b> for <b>ViaRezo</b>,
-              training a <b>transformer</b> translation model end-to-end, and leading the full-stack overhaul
-              of the <b>Bureau des Bachelors</b> web infrastructure.
+              My recent work includes training a <b>transformer</b> translation model end-to-end. 
+              I'm currently working on building a neural network from scratch in C++, 
+              and besides that working on some side projects relating to integrating 
+              technology with language learning through OCR, WSD, LLM integration, etc.
             </p>
             <p>
-              If I'm not building or studying, I'm grinding in the gym, obsessing over stationary, or learning languages to connect
-              with global communities.
+              
+              When I'm not doing any of those, I'm in the gym, obsessing over stationary, 
+              learning languages, or looking for another mechanical keyboard to buy.
             </p>
           </div>
         </div>
