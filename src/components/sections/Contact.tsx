@@ -25,7 +25,7 @@ export default function Contact() {
         <div className="flex items-center justify-center gap-4 flex-wrap">
           <a
             href="mailto:dimas@deffi.eu"
-            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-rouge-700 border border-rouge-700 text-bone-50 text-sm font-medium hover:bg-rouge-800 hover:border-rouge-800 transition-colors"
+            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-700 border border-brand-700 text-bone-50 text-sm font-medium hover:bg-brand-800 hover:border-brand-800 transition-colors"
           >
             <Mail size={16} />
             dimas@deffi.eu
@@ -34,7 +34,7 @@ export default function Contact() {
             href="https://linkedin.com/in/dimas-deffieux"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 rounded-xl border border-bone-300 text-ink-soft text-sm font-medium hover:border-rouge-700/50 hover:text-rouge-700 transition-colors"
+            className="flex items-center gap-2 px-6 py-3 rounded-xl border border-bone-300 text-ink-soft text-sm font-medium hover:border-brand-700/50 hover:text-brand-700 transition-colors"
           >
             <Linkedin size={16} />
             linkedin.com/in/dimas-deffieux

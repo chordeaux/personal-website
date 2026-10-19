@@ -11,6 +11,16 @@ export interface EducationItem {
   location?: string
   description?: string
   logo?: string
+  // Accent line drawn over the logo, in the logo SVG's own coordinates,
+  // so it follows the active theme (an <img> can't read CSS variables).
+  logoDivider?: LogoDivider
+}
+
+export interface LogoDivider {
+  width: number
+  height: number
+  from: [number, number]
+  to: [number, number]
 }
 
 export interface WorkItem {
@@ -32,6 +42,7 @@ export const education: EducationItem[] = [
     period: "2025 – Present",
     location: "Paris, France & Montreal, Canada",
     logo: "/files/logos/centralesupelec-mcgill.svg",
+    logoDivider: { width: 435, height: 397, from: [16.18, 407.47], to: [465.34, -41.68] },
     description:
       "First-year engineering student in a dual-degree program split between France and Canada. At CentraleSupélec, rebuilt Automatants' web infrastructure as a member of the AI club, and served as VP Tech for the Bureau des Bachelors. Competed in a Coding Week building a ski GPS pathfinding app, completed a Modeling Week implementing an epidemiological simulation, and participated in the Bachelor Debate Club. Now participating in the Game Development club, creating games in collaboration with other associations on campus.",
   },
@@ -60,7 +71,7 @@ export const workExperience: WorkItem[] = [
     role: "Software Engineering Intern",
     period: "June 2026 – July 2026",
     description:
-      "Building an internal SharePoint chatbot using RAG for the Electrical Métier division.",
+      "I designed an agentic chatbot system to efficiently search through internal SharePoint documents, applying system design principles to deliver results tailored to requirements I gathered through interviews with managers. I implemented the system in Microsoft Copilot Studio so the less technical department could easily maintain and extend it after my departure, and so it would integrate with their existing M365 architecture. I also improved AI fluency across the department by writing a simple prompt engineering guide and consulting workers on how to automate their tasks and leverage AI.",
     tags: ["RAG", "SharePoint", "Python"],
   },
   {

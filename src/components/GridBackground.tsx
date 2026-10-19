@@ -43,7 +43,7 @@ export default function GridBackground() {
       <div
         className="absolute -bottom-48 left-1/4 w-96 h-96 rounded-full"
         style={{
-          background: "radial-gradient(circle, rgba(179,35,42,0.06), transparent 70%)",
+          background: "radial-gradient(circle, color-mix(in srgb, var(--color-brand-700) 6%, transparent), transparent 70%)",
           filter: "blur(80px)",
         }}
       />
@@ -73,8 +73,8 @@ export default function GridBackground() {
         className="absolute inset-0"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(179,35,42,0.20) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(179,35,42,0.20) 1px, transparent 1px)
+            linear-gradient(color-mix(in srgb, var(--color-brand-700) 20%, transparent) 1px, transparent 1px),
+            linear-gradient(90deg, color-mix(in srgb, var(--color-brand-700) 20%, transparent) 1px, transparent 1px)
           `,
           backgroundSize: "40px 40px",
           maskImage: "radial-gradient(circle 280px at -1000px -1000px, black, transparent)",

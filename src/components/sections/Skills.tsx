@@ -40,8 +40,8 @@ export default function Skills() {
             onClick={() => setActive(f.value)}
             className={`relative px-4 py-1.5 rounded-full text-sm font-medium border transition-colors ${
               active === f.value
-                ? "bg-rouge-700 border-rouge-700 text-bone-50"
-                : "bg-bone-50 border-bone-300 text-ash-600 hover:border-rouge-700/40 hover:text-ink"
+                ? "bg-brand-700 border-brand-700 text-bone-50"
+                : "bg-bone-50 border-bone-300 text-ash-600 hover:border-brand-700/40 hover:text-ink"
             }`}
           >
             {f.label}
@@ -59,7 +59,7 @@ export default function Skills() {
             delay={index * 50}
             threshold={0.1}
           >
-            <CornerBrackets size={8} color="rgba(179,35,42,0.28)">
+            <CornerBrackets size={8} color="color-mix(in srgb, var(--color-brand-700) 28%, transparent)">
               <div className="flex items-center justify-center gap-3 border border-bone-300 bg-bone-50 p-4">
                 <span className="text-ink-soft text-sm font-medium">
                   {tech.name}

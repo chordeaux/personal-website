@@ -29,7 +29,7 @@ export default function WorkExperience() {
             >
               <div className="relative flex items-start gap-8">
                 {/* Dot */}
-                <div className="absolute left-[10px] top-2 w-3 h-3 rounded-full bg-rouge-500 ring-4 ring-bone-100" />
+                <div className="absolute left-[10px] top-2 w-3 h-3 rounded-full bg-brand-500 ring-4 ring-bone-100" />
 
                 {/* Card */}
                 <div className="ml-12 flex-1">
@@ -37,12 +37,12 @@ export default function WorkExperience() {
                   <div className="border border-transparent bg-transparent group-hover:border-bone-300 group-hover:bg-bone-50 p-6 transition-colors duration-200">
                     <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
                       <div>
-                        <h3 className="text-lg font-semibold text-ink group-hover:text-rouge-700 transition-colors">
+                        <h3 className="text-lg font-semibold text-ink group-hover:text-brand-700 transition-colors">
                           {item.role}
                         </h3>
                         <p className="text-sm font-medium text-ink-soft mt-0.5">{item.company}</p>
                       </div>
-                      <span className="text-xs font-medium text-rouge-700 bg-rouge-700/10 rounded-full px-2.5 py-0.5 shrink-0">
+                      <span className="text-xs font-medium text-brand-700 bg-brand-700/10 rounded-full px-2.5 py-0.5 shrink-0">
                         {item.period}
                       </span>
                     </div>

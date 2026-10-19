@@ -15,7 +15,7 @@ export default function TypeText({
   typingSpeed = 60,
   startDelay = 200,
   showCursor = true,
-  cursorClassName = 'text-rouge-500',
+  cursorClassName = 'text-brand-500',
 }: TypeTextProps) {
   const [displayedCount, setDisplayedCount] = useState(0);
   const [typingDone, setTypingDone] = useState(false);

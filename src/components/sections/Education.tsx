@@ -1,7 +1,26 @@
 import BlurText from "@/components/BlurText"
 import FadeContent from "@/components/FadeContent"
 import CornerBrackets from "@/components/CornerBrackets"
-import { education } from "@/data/experience"
+import { education, type LogoDivider } from "@/data/experience"
+import { useId } from "react"
+
+// Same viewBox and padding as the <img>, so preserveAspectRatio lines it up with object-contain.
+function LogoDividerLine({ width, height, from, to }: LogoDivider) {
+  const gradientId = `divider-${useId().replace(/[^a-zA-Z0-9_-]/g, "")}`
+  return (
+    <svg viewBox={`0 0 ${width} ${height}`} className="absolute inset-0 w-full h-full p-4" aria-hidden="true">
+      <defs>
+        <linearGradient id={gradientId} gradientUnits="userSpaceOnUse" x1={from[0]} y1={from[1]} x2={to[0]} y2={to[1]}>
+          <stop offset="0" style={{ stopColor: "var(--color-brand-700)", stopOpacity: 0 }} />
+          <stop offset="0.3" style={{ stopColor: "var(--color-brand-700)", stopOpacity: 1 }} />
+          <stop offset="0.7" style={{ stopColor: "var(--color-brand-700)", stopOpacity: 1 }} />
+          <stop offset="1" style={{ stopColor: "var(--color-brand-700)", stopOpacity: 0 }} />
+        </linearGradient>
+      </defs>
+      <line x1={from[0]} y1={from[1]} x2={to[0]} y2={to[1]} stroke={`url(#${gradientId})`} strokeWidth={1.5} strokeLinecap="round" />
+    </svg>
+  )
+}
 
 export default function Education() {
   return (
@@ -29,16 +48,16 @@ export default function Education() {
             >
               <div className={`relative flex items-start gap-8 md:gap-0 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
                 {/* Dot */}
-                <div className="absolute left-[10px] top-2 w-3 h-3 rounded-full bg-rouge-500 ring-4 ring-bone-100 md:left-[calc(50%-6px)]" />
+                <div className="absolute left-[10px] top-2 w-3 h-3 rounded-full bg-brand-500 ring-4 ring-bone-100 md:left-[calc(50%-6px)]" />
 
                 {/* Card */}
                 <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${index % 2 === 0 ? "md:pr-8" : "md:pl-8"}`}>
                   <CornerBrackets size={10} className="group">
                   <div className="border border-transparent bg-transparent group-hover:border-bone-300 group-hover:bg-bone-50 p-6 transition-colors duration-200">
-                    <span className="text-xs font-medium text-rouge-700 bg-rouge-700/10 rounded-full px-2.5 py-0.5">
+                    <span className="text-xs font-medium text-brand-700 bg-brand-700/10 rounded-full px-2.5 py-0.5">
                       {item.period}
                     </span>
-                    <h3 className="text-lg font-semibold mt-3 mb-1 text-ink group-hover:text-rouge-700 transition-colors">
+                    <h3 className="text-lg font-semibold mt-3 mb-1 text-ink group-hover:text-brand-700 transition-colors">
                       {item.institution}
                     </h3>
                     <p className="text-sm font-medium text-ink-soft mb-1">{item.degree}</p>
@@ -57,6 +76,7 @@ export default function Education() {
                   {item.logo && (
                     <img src={item.logo} alt={`${item.institution} logo`} className="absolute inset-0 w-full h-full object-contain p-4" />
                   )}
+                  {item.logoDivider && <LogoDividerLine {...item.logoDivider} />}
                 </div>
               </div>
             </FadeContent>

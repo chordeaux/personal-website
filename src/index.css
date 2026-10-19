@@ -24,13 +24,14 @@
   --color-ink: #191815;
   --color-ink-soft: #302e29;
 
-  /* Red accent ramp.
-     rouge-500 is the full-saturation hero red (name, headline figures).
-     rouge-700 is the ~80%-saturation accent used for everything else. */
-  --color-rouge-500: #f2262b;
-  --color-rouge-600: #d8333a;
-  --color-rouge-700: #b3232a;
-  --color-rouge-800: #8e1a20;
+  /* Accent ramp. These are fallbacks: the active scheme comes from
+     src/data/themes.ts and is applied at startup by applyTheme().
+     brand-500 is the full-saturation hero colour (name, timeline dots).
+     brand-700 is the readable accent used for everything else. */
+  --color-brand-500: #03cc57;
+  --color-brand-600: #00b04a;
+  --color-brand-700: #008c3a;
+  --color-brand-800: #006b2c;
 }
 
 html {
@@ -95,26 +96,26 @@ body {
   --card-foreground: #191815;
   --popover: #f7f5f0;
   --popover-foreground: #191815;
-  --primary: #b3232a;
+  --primary: var(--color-brand-700);
   --primary-foreground: #f7f5f0;
   --secondary: #e1ddd4;
   --secondary-foreground: #191815;
   --muted: #e1ddd4;
   --muted-foreground: #6b6862;
-  --accent: #b3232a;
+  --accent: var(--color-brand-700);
   --accent-foreground: #f7f5f0;
-  --destructive: #d8333a;
+  --destructive: var(--color-brand-600);
   --border: #d0cbbf;
   --input: #d0cbbf;
   --ring: #8a867c;
-  --chart-1: #f2262b;
-  --chart-2: #b3232a;
+  --chart-1: var(--color-brand-500);
+  --chart-2: var(--color-brand-700);
   --chart-3: #4d4a45;
   --chart-4: #8a867c;
   --chart-5: #b5afa1;
   --sidebar: #edeae3;
   --sidebar-foreground: #191815;
-  --sidebar-primary: #b3232a;
+  --sidebar-primary: var(--color-brand-700);
   --sidebar-primary-foreground: #f7f5f0;
   --sidebar-accent: #e1ddd4;
   --sidebar-accent-foreground: #191815;
@@ -129,26 +130,26 @@ body {
   --card-foreground: #f7f5f0;
   --popover: #23211d;
   --popover-foreground: #f7f5f0;
-  --primary: #f2262b;
+  --primary: var(--color-brand-500);
   --primary-foreground: #f7f5f0;
   --secondary: #302e29;
   --secondary-foreground: #f7f5f0;
   --muted: #302e29;
   --muted-foreground: #b5afa1;
-  --accent: #f2262b;
+  --accent: var(--color-brand-500);
   --accent-foreground: #f7f5f0;
-  --destructive: #f2262b;
+  --destructive: var(--color-brand-500);
   --border: #ffffff1a;
   --input: #ffffff26;
   --ring: #8a867c;
-  --chart-1: #f2262b;
-  --chart-2: #b3232a;
+  --chart-1: var(--color-brand-500);
+  --chart-2: var(--color-brand-700);
   --chart-3: #b5afa1;
   --chart-4: #8a867c;
   --chart-5: #4d4a45;
   --sidebar: #23211d;
   --sidebar-foreground: #f7f5f0;
-  --sidebar-primary: #f2262b;
+  --sidebar-primary: var(--color-brand-500);
   --sidebar-primary-foreground: #f7f5f0;
   --sidebar-accent: #302e29;
   --sidebar-accent-foreground: #f7f5f0;
@@ -210,3 +211,4 @@ body {
   pointer-events: none;
   z-index: 1000;
 }
+

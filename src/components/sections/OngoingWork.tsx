@@ -24,16 +24,16 @@ export default function OngoingWork() {
             delay={index * 150}
             threshold={0.1}
           >
-            <CornerBrackets size={10} color="rgba(179,35,42,0.28)" className="h-full group">
+            <CornerBrackets size={10} color="color-mix(in srgb, var(--color-brand-700) 28%, transparent)" className="h-full group">
             <SpotlightCard
               className="h-full !rounded-none !border-transparent !bg-transparent group-hover:!border-bone-300 group-hover:!bg-bone-50 !p-6 !shadow-none transition-colors duration-200"
-              spotlightColor="rgba(179, 35, 42, 0.06)"
+              spotlightColor="color-mix(in srgb, var(--color-brand-700) 6%, transparent)"
             >
               <div className="flex items-start justify-between mb-3">
-                <h3 className="text-xl font-semibold text-ink group-hover:text-rouge-700 transition-colors">
+                <h3 className="text-xl font-semibold text-ink group-hover:text-brand-700 transition-colors">
                   {item.title}
                 </h3>
-                <span className="ml-3 shrink-0 rounded-full border border-rouge-700/25 bg-rouge-700/10 px-2.5 py-0.5 text-xs font-medium text-rouge-700">
+                <span className="ml-3 shrink-0 rounded-full border border-brand-700/25 bg-brand-700/10 px-2.5 py-0.5 text-xs font-medium text-brand-700">
                   {item.status}
                 </span>
               </div>

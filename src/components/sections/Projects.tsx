@@ -25,12 +25,12 @@ export default function Projects() {
             delay={index * 150}
             threshold={0.1}
           >
-            <CornerBrackets size={10} color="rgba(179,35,42,0.28)" className="h-full group">
+            <CornerBrackets size={10} color="color-mix(in srgb, var(--color-brand-700) 28%, transparent)" className="h-full group">
             <SpotlightCard
               className="h-full !rounded-none !border-transparent !bg-transparent group-hover:!border-bone-300 group-hover:!bg-bone-50 !p-6 !shadow-none transition-colors duration-200"
-              spotlightColor="rgba(179, 35, 42, 0.06)"
+              spotlightColor="color-mix(in srgb, var(--color-brand-700) 6%, transparent)"
             >
-              <h3 className="text-xl font-semibold mb-3 text-ink group-hover:text-rouge-700 transition-colors">
+              <h3 className="text-xl font-semibold mb-3 text-ink group-hover:text-brand-700 transition-colors">
                 {project.title}
               </h3>
 
@@ -55,7 +55,7 @@ export default function Projects() {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-sm text-ash-500 hover:text-rouge-700 transition-colors"
+                    className="flex items-center gap-1.5 text-sm text-ash-500 hover:text-brand-700 transition-colors"
                   >
                     <ExternalLink size={14} />
                     Link
@@ -66,7 +66,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-sm text-ash-500 hover:text-rouge-700 transition-colors"
+                    className="flex items-center gap-1.5 text-sm text-ash-500 hover:text-brand-700 transition-colors"
                   >
                     <Github size={14} />
                     Source
